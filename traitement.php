@@ -2,7 +2,7 @@
 $Network = 'localhost';
 $BDname = 'ecotun';
 $UserName = 'root';
-$Password = 'root';
+$Password = '';
 
 try {
     $strConnection = 'mysql:host='.$Network.';dbname='.$BDname; 

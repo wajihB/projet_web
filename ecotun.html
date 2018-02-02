@@ -1,48 +1,66 @@
 <html>
+
 <body background="./ecommerce.jpg">
-      
-    <p><h1>E-coTun</h1></p>
-    <p>Livraison 3J ouvre // satisfait ou rembourse // qualite reconnu et norme CE</p>
+    <link rel="stylesheet" href="Style.css" />
+
+    <h1>E-coTun</h1>
+    <p class="introduction">Livraison 3J ouvre // satisfait ou rembourse // qualite reconnu et norme CE</p>
     <br>
-    <p> <a href="./formulaire.html"target="_blank">Inscription</href></a> 
-        Me connecter ====> login : <input type="text" name="login" id="login">
-        mots de passe : <input type="int" name="password" id="password"><button type="submit">ENVOYER</buttontype></button></p>
-        
+
+    <div class="barre_recherche">
+        <form action="" class="recherche">
+            <input class="champ" type="text" value="Rechercher un produit, une marque, une reference..." />
+            <input class="bouton" type="submit" value="R" />
+        </form>
+    </div>
+
+    <p>
+        <a href="./formulaire.html" target="_blank">Inscription</href>
+        </a>
+        Me connecter ====> login :
+        <input type="text" name="login" id="login"> mots de passe :
+        <input type="int" name="password" id="password">
+        <button type="submit">ENVOYER</buttontype>
+        </button>
+    </p>
+
     <br>
     <hr>
-    <ul>
 
-        <li> Smartphone
-            <ul> 
-                <li>Haut de gammes</li>
-                <li>Millieu de gammes</li>
-                <li>bas de gammes</li>
-            </ul>
-        </li>
-        <li>informatique
-            <ul>
-                <li>ordinateur portable</li>
-                <li>ordinateur de bureau</li>
-                <li>accessoire PC</li>
-            </ul>
-        </li>  
-        <li> console & gaming
-            <ul>
-                <li>console</li>
-                <li>PC Gamers</li>
-                <li>accessoire Gaming</li>
-            </ul>
-        </li> 
-        <li> Image et Son 
-            <ul>
-                <li>TV</li>
-                <li>Home cinema</li>
-            </ul>
-        </li>
+    <table class="position_titre_produit">
+        <tr>
 
-    </ul>
+            <div class="smartphone">
+                <td>
+                    <ul>
+                        <a href="./smartphone.html"> Smartphone</a>
+                    </ul>
+                </td>
+            </div>
+            <div class="informatique">
+                <td>
+                    <ul>
+                        <a href="./informatique.html"> Informatique</a>
+                    </ul>
+                </td>
+            </div>
+
+
+
+            <div class="console_gaming">
+                <td>
+                    <ul>
+                        <a href="./console_gaming.html"> Console & Gaming</a>
+                    </ul>
+                </td>
+            </div>
+        </tr>
+    </table>
+
+
+
     <hr>
-    
-    
+
+
 
 </body>
