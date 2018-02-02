@@ -1,9 +1,43 @@
 h1
 {
+    position: absolute;
     color: red;
+    left: 35%;
+    top: 15%;
 }
+
+.barre_recherche
+{
+    position: absolute;
+    left: 42%;
+    top: 18.5%;
+    
+}
+
+.inscription
+{
+    position: absolute;
+    right: 13%;
+    top:3%;  
+}
+
 .introduction
 {
     text-align: center;
     font-weight: bold;
 }
+.connection
+{
+    position: absolute;
+    right: 5%;
+    top: 8%;
+}
+
+.position_titre_produit
+{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+
