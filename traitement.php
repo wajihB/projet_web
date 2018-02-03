@@ -1,24 +1,14 @@
-<?php 
-$Network = 'localhost';
-$BDname = 'ecotun';
-$UserName = 'root';
-$Password = '';
+<?php
 
-try {
-    $strConnection = 'mysql:host='.$Network.';dbname='.$BDname; 
-    $arrExtraParam= array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
-    $pdo = new PDO($strConnection, $UserName, $Password, $arrExtraParam); // Instancie la connexion.
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e) {
-    $msg = 'ERREUR PDO dans ' . $e->getFile() . ' L.' . $e->getLine() . ' : ' . $e->getMessage();
-    die($msg);
-}
+$bdd = new PDO('mysql:host=localhost;dbname=ecotun;charset=utf8', 'root', '');
+$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
 
+$req = $bdd->prepare('INSERT INTO formulaire_inscription(nom, prenom, nom_utilisateur, mdp) VALUES(?,?,?,?)');
+$req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['nom_utilisateur'],$_POST['mdp']));
 
-}
+
+echo 'Information bien enregistré!';
 
 
 ?>
-
