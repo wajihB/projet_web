@@ -32,6 +32,6 @@ $utilisateur = $stmt->fetch();
 if($utilisateur){
     $_SESSION['utilisateur'] = $utilisateur['nom_utilisateur'];
     
-    header('Location: ./ecotun.php');
+    header('Location: ../pages/ecotun.php');
 }
 ?>

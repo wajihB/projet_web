@@ -6,9 +6,9 @@ if(isset($_SESSION['utilisateur'])){
 ?>
 <html>
 
-<body background="./ecommerce.jpg">
+<body background="../images/ecommerce.jpg">
 
-    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="../Style.css" />
 
     <h1>E-coTun</h1>
 
@@ -26,17 +26,19 @@ if(isset($_SESSION['utilisateur'])){
     </div>
 
     <div class="inscription">
-        <a href="./formulaire.html" target="_blank">Inscription</href>
+        <a href="formulaire.html" target="_blank">Inscription</href>
         </a>
     </div>
 
     <div class="connexion">
         <?php if(isset($utilisateur)){
             echo 'Bonjour ' . $utilisateur;
-            echo '<a href="logout.php">Deco</a>';
-        }else{
+            echo '<a href="../scripts/logout.php">Deco</a>';
+        }
+        else
+        {
         ?>
-            <form action="connexion.php" method="post">  
+            <form action="../scripts/connexion.php" method="post">  
             utilisateur : <input type="text" name="nom_utilisateur" id="nom_utilisateur"> 
             <br>
             password : <input type="text" name="mdp" id="mdp">
@@ -48,7 +50,7 @@ if(isset($_SESSION['utilisateur'])){
     </div>
 
     <div class="panier">
-        <form action="panier.php" method="post"></form>
+        <form action="../scripts/panier.php" method="post"></form>
         <button type="submit">PANIER</button>
 
     </div>
@@ -61,7 +63,7 @@ if(isset($_SESSION['utilisateur'])){
             <div class="smartphone">
                 <td>
                     <ul>
-                        <a href="./smartphone.html"> Smartphone</a>
+                        <a href="smartphone.html"> Smartphone</a>
                     </ul>
                 </td>
             </div>
@@ -69,7 +71,7 @@ if(isset($_SESSION['utilisateur'])){
             <div class="informatique">
                 <td>
                     <ul>
-                        <a href="./informatique.html"> Informatique</a>
+                        <a href="informatique.html"> Informatique</a>
                     </ul>
                 </td>
             </div>
@@ -77,7 +79,7 @@ if(isset($_SESSION['utilisateur'])){
             <div class="console_gaming">
                 <td>
                     <ul>
-                        <a href="./console_gaming.html"> Console & Gaming</a>
+                        <a href="console_gaming.html"> Console & Gaming</a>
                     </ul>
                 </td>
             </div>
