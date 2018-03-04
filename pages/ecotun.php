@@ -33,7 +33,7 @@ if(isset($_SESSION['utilisateur'])){
     <div class="connexion">
         <?php if(isset($utilisateur)){
             echo 'Bonjour ' . $utilisateur;
-            echo '<a href="../scripts/logout.php">Deco</a>';
+            echo '<a href="../scripts/logout.php"> Deconnexion</a>';
         }
         else
         {
@@ -50,8 +50,8 @@ if(isset($_SESSION['utilisateur'])){
     </div>
 
     <div class="panier">
-        <form action="../scripts/panier.php" method="post"></form>
-        <button type="submit">PANIER</button>
+        <form action="./panier.php" method="post">
+        <button type="submit">PANIER</button></form>
 
     </div>
 
