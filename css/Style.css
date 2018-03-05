@@ -2,30 +2,18 @@ h1
 {
     position: absolute;
     color: red;
-    left: 35%;
-    top: 15%;
+    left: 2%;
+    top: 1%;
 }
 
-.barre_recherche
-{
-    position: absolute;
-    left: 42%;
-    top: 18.5%;
-    
-}
 
 .inscription
 {
     position: absolute;
-    right: 13%;
+    right: 10%;
     top:3%;  
 }
 
-.introduction
-{
-    text-align: center;
-    font-weight: bold;
-}
 .connexion
 {
     position: absolute;
@@ -38,5 +26,19 @@ h1
     position: absolute;
     top: 25%;
     left: 35%;
+}
+
+.bandeau 
+{
+    height: 10%;
+    background: rgba(5, 136, 223, 0.336);
+}
+
+.form-group_barre_recherche
+{
+    position: absolute;
+    left: 15%;
+    top: 3.5%;
+    width: 50%;
 }
 
