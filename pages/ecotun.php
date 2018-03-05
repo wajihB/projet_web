@@ -55,8 +55,9 @@ if(isset($_SESSION['utilisateur'])){
 
 
     <div class="inscription">
-        <a href="formulaire.html" target="_blank">Inscription</href>
-        </a>
+        <a href="formulaire.html"</href>
+        
+        <button type="button" class="btn btn-secondary btn-lg">Inscription</button></a>
     </div>
 
     <div class="connexion">
@@ -70,7 +71,7 @@ if(isset($_SESSION['utilisateur'])){
 
 <!-- ajout de la zone de connection (login et mots de passe) -->
 
-
+<div class="fixed-top">
 <form action="../scripts/connexion.php" method="post">
 
   <div class="form-group_login">
@@ -85,6 +86,7 @@ if(isset($_SESSION['utilisateur'])){
 
   <button type="submit" class="btn btn-primary">Connection</button>
 </form>
+</div>
         
 
         
@@ -95,8 +97,56 @@ if(isset($_SESSION['utilisateur'])){
 
     <div class="panier">
         <form action="./panier.php" method="post">
-        <button type="submit">PANIER</button></form>
+        <button type="submit" class="btn btn-primary btn-lg">PANIER</button></form>
+        
 
     </div>
+
+    <div id="my_carousel" class="carousel slide" data-ride="carousel">
+    <!-- Bulles -->
+    <ol class="carousel-indicators">
+    <li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#my_carousel" data-slide-to="1"></li>
+    <li data-target="#my_carousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Slides -->
+    <div class="carousel-inner">
+    <!-- Page 1 -->
+    <div class="item active">  
+    <div class="carousel-page">
+    <img src="../images/pc_msi.jpg" class="img-responsive" style="margin:0px auto;" />
+    </div> 
+    <div class="carousel-caption">Page 1 de présentation</div>
+    </div>   
+    <!-- Page 2 -->
+    <div class="item"> 
+    <div class="carousel-page"><img src="../images/iphone.jpg" class="img-responsive img-rounded" 
+    style="margin:0px auto;"  /></div> 
+    <div class="carousel-caption">Page 2 de présentation</div>
+    </div>  
+    <!-- Page 3 -->
+    <div class="item">  
+    <div class="carousel-page">
+    <img src="../images/samsung.jpg" class="img-responsive img-rounded" 
+    style="margin:0px auto;max-height:100%;"  />
+    </div>  
+    <div class="carousel-caption">Page 2 de présentation</div>
+    </div>     
+    </div>
+    <!-- Contrôles -->
+    <a class="left carousel-control" href="#my_carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#my_carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+    </div>
+
+    
+    <script type="text/javascript" src="../scripts/bootstrap.js"></script>
+   
+    <script type="text/javascript" src="../scripts/jquery-3.3.1.js"></script>
+    
+
 
 </body>
