@@ -3,15 +3,15 @@ h1
     position: absolute;
     color: red;
     left: 2%;
-    top: 1%;
+    top: 2%;
 }
 
 
 .inscription
 {
     position: absolute;
-    right: 28%;
-    top:3%;  
+    right: 20%;
+    top:4%;  
 }
 
 .connexion
@@ -30,7 +30,7 @@ h1
 
 .bandeau 
 {
-    height: 10%;
+    height: 12%;
     background: rgba(5, 136, 223, 0.336);
 }
 
@@ -38,18 +38,39 @@ h1
 {
     position: absolute;
     left: 15%;
-    top: 3.5%;
+    top: 4.5%;
     width: 50%;
+    
 }
 
 .carousel-page
 {
+
 width:100%;
 height:400px;
 background-color:#5f666d;
 color:white;
 }
 
+.zone_connection
+{
+    margin-top: -36%;
+    
+}
 
+.panier
+{
+    position: absolute;
+    right: 28%;
+    top: 4%;
+}
+
+.container-fluid_bas_de_page
+{
+    position: absolute;
+    height: 60%;
+    background: #0f1011;
+   
+}
 
 

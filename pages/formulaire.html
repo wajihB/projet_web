@@ -1,16 +1,83 @@
 <html>
-<head>Formulaire d'inscription</head>
 
-<form action="../scripts/traitement.php" method="post">
-
-<p>nom : <input type="text" name="nom" id="nom"></p>
-<p>prenom : <input type="text" name="prenom" id="prenom"></p>
-<p>login : <input type="text" name="nom_utilisateur" id="nom_utilisateur"></p>
-<p>mots de passe : <input type="mdp" name="mdp" id="mdp" maxlength="10"></p>
+<body>
 
 
-<p><input type="submit" value="ENVOYER"></p>
-</form>
+  <link rel="stylesheet" href="../css/Style.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <!-- ajout du bandeau en haut de page -->
+
+  <div class="container-fluid bandeau"></div>
+
+
+  <h1>E-coTun.com</h1>
+
+  <div class="form-group_barre_recherche">
+    <div class="input-group input-group-md icon-addon addon-md">
+      <input type="text" placeholder="Texte" name="" id="schbox" class="form-control">
+      <i class="icon icon-search"></i>
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-inverse">Rechercher</button>
+      </span>
+    </div>
+  </div>
+
+  <div class="navbar navbar-default">
+
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="ecotun.php">ACCUEIL</a>
+
+    </div>
+
+    <ul class="nav navbar-nav">
+
+      <li class="active">
+        <a href="smartphone.html">Smartphone</a>
+      </li>
+
+      <li>
+        <a href="informatique.html">Informatique</a>
+      </li>
+
+      <li>
+        <a href="console_gaming.html">Console & Gaming</a>
+      </li>
+
+      <li>
+        <a href="#">Contact</a>
+      </li>
+
+    </ul>
+
+  </div>
 
 
 
+
+  <h2>Formulaire d'inscription</h2>
+
+  <form action="../scripts/traitement.php" method="post">
+
+    <p>nom :
+      <input type="text" name="nom" id="nom">
+    </p>
+    <p>prenom :
+      <input type="text" name="prenom" id="prenom">
+    </p>
+    <p>login :
+      <input type="text" name="nom_utilisateur" id="nom_utilisateur">
+    </p>
+    <p>mots de passe :
+      <input type="mdp" name="mdp" id="mdp" maxlength="10">
+    </p>
+
+
+    <p>
+      <input type="submit" value="ENVOYER">
+    </p>
+  </form>
+
+
+</body>

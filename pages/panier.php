@@ -59,10 +59,52 @@ if (!$erreur){
 ?>
 
 
-<head>
-<title>Votre panier</title>
-</head>
-<body>
+<link rel="stylesheet" href="../css/Style.css" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+    
+<!-- ajout du bandeau en haut de page -->
+
+<div class="container-fluid bandeau"></div>
+    
+
+<h1>E-coTun.com</h1>
+
+<div class="form-group_barre_recherche">
+        <div class="input-group input-group-md icon-addon addon-md">
+            <input type="text" placeholder="Texte" name="" id="schbox" class="form-control">
+            <i class="icon icon-search"></i>
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-inverse">Rechercher</button>
+            </span>
+        </div>
+        </div>
+
+        <div class="navbar navbar-default">
+
+                <div class="navbar-header">
+              
+                  <a class="navbar-brand" href="ecotun.php">ACCUEIL</a>
+              
+                </div>
+              
+                <ul class="nav navbar-nav">
+              
+                  <li class="active"><a href="smartphone.html">Smartphone</a></li>
+              
+                  <li><a href="informatique.html">Informatique</a></li>
+              
+                  <li><a href="console_gaming.html">Console & Gaming</a></li>
+              
+                  <li><a href="#">Contact</a></li>
+              
+                </ul>
+              
+              </div>
+
+
+<h2>Votre panier</h2>
+
+
 
 <form method="post" action="panier.php">
 <table style="width: 500px">
@@ -74,7 +116,7 @@ if (!$erreur){
 		<td>Quantité</td>
 		<td>Prix Unitaire</td>
 		<td>Action</td>
-		<td><input type="button" value="ACCUEIL" onclick="javascript:location.href='ecotun.php'"></td>
+		
 	</tr>
 
 	
@@ -117,7 +159,8 @@ if (!$erreur){
 		  
 	      
 
-	      echo "</td></tr>";
+		  echo "</td></tr>";
+		  
 	   }
 	}
 	?>
