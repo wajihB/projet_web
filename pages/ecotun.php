@@ -13,10 +13,11 @@ if(isset($_SESSION['utilisateur'])){
     
 <!-- ajout du bandeau en haut de page -->
 
-    <div class="container-fluid bandeau"></div>
+    <div class="container-fluid_bandeau"></div>
+    
     
     <h1>E-coTun.com</h1>
-    
+
 <!-- Creation barre de recherche -->
 
     <div class="form-group_barre_recherche">
@@ -141,7 +142,7 @@ ferme la session lorsqu'il appuie sur le bouton deconnection -->
     </div>
 
     
-
+    <div class="container-fluid_bas"></div>
     
     <script type="text/javascript" src="../scripts/bootstrap.js"></script> 
     <script type="text/javascript" src="../scripts/jquery-3.3.1.js"></script>

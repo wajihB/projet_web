@@ -64,7 +64,7 @@ if (!$erreur){
     
 <!-- ajout du bandeau en haut de page -->
 
-<div class="container-fluid bandeau"></div>
+<div class="container-fluid_bandeau"></div>
     
 
 <h1>E-coTun.com</h1>
@@ -166,5 +166,8 @@ if (!$erreur){
 	?>
 </table>
 </form>
+
+
+
 </body>
 </html>

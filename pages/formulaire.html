@@ -8,7 +8,7 @@
 
   <!-- ajout du bandeau en haut de page -->
 
-  <div class="container-fluid bandeau"></div>
+  <div class="container-fluid_bandeau"></div>
 
 
   <h1>E-coTun.com</h1>
@@ -58,26 +58,31 @@
 
   <h2>Formulaire d'inscription</h2>
 
+
   <form action="../scripts/traitement.php" method="post">
-
-    <p>nom :
-      <input type="text" name="nom" id="nom">
-    </p>
-    <p>prenom :
-      <input type="text" name="prenom" id="prenom">
-    </p>
-    <p>login :
-      <input type="text" name="nom_utilisateur" id="nom_utilisateur">
-    </p>
-    <p>mots de passe :
-      <input type="mdp" name="mdp" id="mdp" maxlength="10">
-    </p>
-
-
-    <p>
-      <input type="submit" value="ENVOYER">
-    </p>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nom</label>
+      <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrer votre nom">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Prenom</label>
+      <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Entrer votre prenom">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Login</label>
+      <input type="text" class="form-control" id="nom_utilisateur" name="nom_utilisateur" placeholder="Cree votre login">
+      <small id="emailHelp" class="form-text text-muted">Votre login sera utiliser pour vous connecter</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Mots de passe</label>
+      <input type="text" class="form-control" id="mdp" name="mdp" placeholder="Entrer un mot de passe">
+      <small id="emailHelp" class="form-text text-muted">Ne communiquez jamais votre mots de passe</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
   </form>
+
+
+  <div class="container-fluid_bas"></div>
 
 
 </body>

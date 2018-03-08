@@ -28,7 +28,7 @@ h1
     left: 35%;
 }
 
-.bandeau 
+.container-fluid_bandeau
 {
     height: 12%;
     background: rgba(5, 136, 223, 0.336);
@@ -65,12 +65,14 @@ color:white;
     top: 4%;
 }
 
-.container-fluid_bas_de_page
+.container-fluid_bas
 {
-    position: absolute;
-    height: 60%;
-    background: #0f1011;
-   
+    height: 50%;
+    background: rgb(1, 4, 5);
+    margin-top: 0.5%;
+    
+  
+ 
 }
 
-
+ 
